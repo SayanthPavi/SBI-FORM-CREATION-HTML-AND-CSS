@@ -118,208 +118,196 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 11px;
-    
+
 }
-input[type=text]{
+input[type=text] {
     border: 1px solid #000000;
     width: 14px;
     height: 17px;
 }
-input[type=text]:focus{
+input[type=text]:focus {
     outline: none;
+    text-align: center;
 }
-input[type=checkbox]{
-    border: 5px solid #000000;
-    width: 15px;
-    height: 20px;
-    
+input[type=checkbox] {
+    width: 19px;
+    height: 19px;
 }
-input[type=checkbox]{
-    border: 5px solid #000000;
-    width: 15px;
-    height: 20px;
-    
-}
-.data-box{
-    /* border: 5px solid #000000; */
+.data-box {
     position: relative;
     display: flex;
     justify-content: space-between;
-    
-}
-textarea{
-    resize: none;
-     width: 100%;
-     height: 45px; 
-    /* position: absolute; */
-    top: 0;  
-     left: 90px;
 
 }
-#coNameDetails_0{
+textarea {
+    resize: none;
+    width: 100%;
+    height: 45px;
+    top: 0;
+    left: 90px;
+}
+#coNameDetails_0 {
     margin-left: 20px;
     width: 705px;
     height: 45px;
 }
-#patientCurrentAdress_0{
+#patientCurrentAdress_0 {
     margin-left: 20px;
     width: 630px;
-    height: 45px; 
+    height: 45px;
 }
-
-#font-size-small{
+.font-size-small {
     font-size: 10px;
 }
-.data-container{
+.data-container {
     display: flex;
     flex-direction: column;
 }
-#illnessWithComplaints_0,#otherTreatmentsDetails_0{
+#illnessWithComplaints_0,
+#otherTreatmentsDetails_0 {
     width: 385px;
     height: 45px;
 }
-#clinicalFindings_0,#injuryOccurrence_0{
+#clinicalFindings_0,
+#injuryOccurrence_0 {
     width: 400px;
     height: 45px;
 }
-#ailmentDuration_0,#maternityDetails_G,
+#ailmentDuration_0,
+#maternityDetails_G,
 #maternityDetails_P,
 #maternityDetails_L,
-#maternityDetails_A,#daysInHospital_0,#icuDays_0{
+#maternityDetails_A,
+#daysInHospital_0,
+#icuDays_0 {
     border: 1px solid #000000;
     width: 50px;
     height: 22px;
-    
 }
-#ailmentDuration_1{
+#ailmentDuration_1 {
     width: 600px;
     height: 22px;
     margin-left: 28px;
 }
-#provDiagnosis_0,#surgeryName0{
+#provDiagnosis_0,
+#surgeryName0 {
     width: 600px;
     height: 45px;
     margin-right: 30px;
 }
-#investigationMedicalDetails_0{
-    width: 400px;
+#investigationMedicalDetails_0 {
+    width: 370px;
     height: 45px;
 }
-#drugAdminRoute_0{
+#drugAdminRoute_0 {
     width: 250px;
     height: 45px;
 }
-.routeofdrug{
+.routeofdrug {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
 }
-.routeofdrug label{
+.routeofdrug label {
     padding-top: 12px;
     margin: 0px 8px 0px 0px;
 }
-.right-margine-gap{
-   margin-right: 15px;
-   margin-left: 10px;
+.right-margine-gap {
+    margin-right: 15px;
+    margin-left: 10px;
 }
-.left-margine-gap{
-   margin-left: 50px;
+.left-margine-gap {
+    margin-left: 50px;
 }
-.small-gap-between{
+.small-gap-between {
     padding: 11px;
 }
-#roomTypeRs_0{
-    width: 267px;
+#roomTypeRs_0 {
+    width: 266px;
+    height: 20px;
 }
-.text-align-right p{
-text-align: right;
-font-size: 11px;
-margin-top: 30px;
-margin-bottom: 15px;
+.text-align-right p {
+    text-align: right;
+    font-size: 11px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
-.details-of-patient-container{
+.details-of-patient-container {
     display: flex;
     justify-content: space-between;
     font-size: 11px;
-    margin-bottom: 10px;
 }
-.patient-form-first-section{
+.patient-form-first-section {
     display: flex;
-    width: 510px;
+    width: 505px;
     justify-content: space-between;
-    
 }
-.patient-form-second-section{
+.patient-form-second-section {
     display: flex;
     justify-content: space-between;
-    width: 273px;
+    width: 280px;
 }
-
-.small-margin-gap{
-    margin-right: 8px;
+.small-margin-gap {
+    margin-right: 5px;
 }
-.otherAilmentsDetails_box{
+.otherAilmentsDetails_box {
     display: flex;
     justify-content: end;
     width: 100%;
     margin: 20px 0px;
 }
-#otherAilmentsDetails_0{
+#otherAilmentsDetails_0 {
     width: 300px;
+    height: 60px;
     border: 1px solid #000000;
 }
-#drName_0,#qualification_0,#regNoWithStateCode_0{
+#drName_0,
+#qualification_0,
+#regNoWithStateCode_0 {
     margin-left: 4px;
 }
-.declaration-by-patient-title{
+.declaration-by-patient-title {
     font-size: 11px;
     font-weight: bold;
     letter-spacing: .5px;
     margin: 20px 0px 10px 0px;
     text-transform: uppercase;
 }
-.declaration-by-patient{
+.declaration-by-patient {
     margin-bottom: 100px;
 }
-.declaration-by-patient ol li{
+.declaration-by-patient ol li {
     font-size: 11px;
     margin: 10px 0px;
 }
-.patient-signature,.dr-signature{
+.patient-signature,
+.dr-signature {
     display: flex;
     margin-top: 12px;
 }
-#nameAndSignature_0{
+#signaturePatient {
     border: 1px solid #000000;
     width: 250px;
     height: 60px;
     margin-left: 20px;
 }
-.dr-signature label{
+.dr-signature label {
     font-size: 13px;
     margin-right: 10px;
 }
-#drSignature_0,#hospitalSeal_0{
+#drSignature_0,
+#hospitalSeal_0 {
+    border: 1px solid #000000;
     width: 280px;
     height: 70px;
 }
-.dr-dateAndTime{
+.dr-dateAndTime {
     width: 310px;
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
 }
-.dr-dateAndTime label{
-margin-right: 10px;
+.dr-dateAndTime label {
+    margin-right: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-

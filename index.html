@@ -16,7 +16,7 @@
             <h5>PART C (Revised)</h5>
           </div>
           <div class="header-logo">
-            <img src="./logo.webp" alt="" />
+            <img src="./logo.webp" alt="logo" />
           </div>
         </div>
         <div class="header-emil-id">
@@ -116,13 +116,13 @@
           <div>
             <label>b) Gender:</label>
             <label for="male"
-              ><input type="text" name="gender" id="male" /> Male</label
+              ><input type="checkbox" name="gender" id="male" /> Male</label
             >
             <label for="female"
-              ><input type="text" name="gender" id="female" /> Female</label
+              ><input type="checkbox" name="gender" id="female" /> Female</label
             >
             <label for="third"
-              ><input type="text" name="gender" id="other" /> Third
+              ><input type="checkbox" name="gender" id="other" /> Third
               Gender</label
             >
           </div>
@@ -163,14 +163,14 @@
               type="text"
               name="years"
               id="age_0"
-              value="Y"
+              placeholder="Y"
               maxlength="1"
             />
             <input
               type="text"
               name="years"
               id="age_1"
-              value="Y"
+              placeholder="Y"
               maxlength="1"
             />
           </label>
@@ -180,28 +180,28 @@
               type="text"
               name="months"
               id="age_3"
-              value="M"
+              placeholder="M"
               maxlength="1"
             />
             <input
               type="text"
               name="months"
               id="age_4"
-              value="M"
+              placeholder="M"
               maxlength="1"
             />
           </label>
         </div>
         <div>
           <label>f) Date of Birth: </label>
-          <input type="text" id="dob_0" maxlength="1" value="D" />
-          <input type="text" id="dob_1" maxlength="1" value="D" />
-          <input type="text" id="dob_2" maxlength="1" value="M" />
-          <input type="text" id="dob_3" maxlength="1" value="M" />
-          <input type="text" id="dob_4" maxlength="1" value="Y" />
-          <input type="text" id="dob_5" maxlength="1" value="Y" />
-          <input type="text" id="dob_6" maxlength="1" value="Y" />
-          <input type="text" id="dob_7" maxlength="1" value="Y" />
+          <input type="text" id="dob_0" maxlength="1" placeholder="D" />
+          <input type="text" id="dob_1" maxlength="1" placeholder="D" />
+          <input type="text" id="dob_2" maxlength="1" placeholder="M" />
+          <input type="text" id="dob_3" maxlength="1" placeholder="M" />
+          <input type="text" id="dob_4" maxlength="1" placeholder="Y" />
+          <input type="text" id="dob_5" maxlength="1" placeholder="Y" />
+          <input type="text" id="dob_6" maxlength="1" placeholder="Y" />
+          <input type="text" id="dob_7" maxlength="1" placeholder="Y" />
         </div>
         <div>
           <label>d) Insurer ID Card No: </label>
@@ -263,8 +263,10 @@
             >j)Currently do you have any other medical claim /health
             insurance:</label
           >
-          <label for="yes"><input type="text" name="yes" id="yes" /> Yes</label>
-          <label for="no"><input type="text" name="no" id="no" /> No</label>
+          <label for="yes"
+            ><input type="checkbox" name="yes" id="yes" /> Yes</label
+          >
+          <label for="no"><input type="checkbox" name="no" id="no" /> No</label>
         </div>
         <div>
           <label>j1) Insurer name: </label>
@@ -361,7 +363,7 @@
       </div>
 
       <div class="filled-by-insured-title">
-        <p id="font-size-small">
+        <p class="font-size-small">
           To bo filled by the treating doctor / hospital
         </p>
       </div>
@@ -423,21 +425,18 @@
       <div class="filled-by-insured-form-row">
         <div>
           <label>e)Duration of the present ailment:</label>
-          <label
-            ><input type="text" id="ailmentDuration_0" maxlength="1" />
-            Days</label
-          >
+          <label><input type="text" id="ailmentDuration_0" /> Days</label>
           <label class="right-margine-gap"
             >e.1) Date of first consultation:
           </label>
-          <input type="text" id="firstConsultDate_0" maxlength="1" value="D" />
-          <input type="text" id="firstConsultDate_1" maxlength="1" value="D" />
-          <input type="text" id="firstConsultDate_2" maxlength="1" value="M" />
-          <input type="text" id="firstConsultDate_3" maxlength="1" value="M" />
-          <input type="text" id="firstConsultDate_4" maxlength="1" value="Y" />
-          <input type="text" id="firstConsultDate_5" maxlength="1" value="Y" />
-          <input type="text" id="firstConsultDate_6" maxlength="1" value="Y" />
-          <input type="text" id="firstConsultDate_7" maxlength="1" value="Y" />
+          <input type="text" id="firstConsultDate_0" maxlength="1" placeholder="D" />
+          <input type="text" id="firstConsultDate_1" maxlength="1" placeholder="D" />
+          <input type="text" id="firstConsultDate_2" maxlength="1" placeholder="M" />
+          <input type="text" id="firstConsultDate_3" maxlength="1" placeholder="M" />
+          <input type="text" id="firstConsultDate_4" maxlength="1" placeholder="Y" />
+          <input type="text" id="firstConsultDate_5" maxlength="1" placeholder="Y" />
+          <input type="text" id="firstConsultDate_6" maxlength="1" placeholder="Y" />
+          <input type="text" id="firstConsultDate_7" maxlength="1" placeholder="Y" />
         </div>
       </div>
       <div class="filled-by-insured-form-row">
@@ -473,30 +472,48 @@
       </div>
       <div class="filled-by-insured-form-row">
         <label id="medicalMngmt">g) Proposed line of treatment:</label>
-        <label for="medMgmt"
-          ><input type="text" name="medMgmt" id="medMgmt" /> Mediacl
-          Management</label
-        >
-        <label for="surgicalMgmt"
-          ><input type="text" name="surgicalMgmt" id="surgicalMgmt" /> Surgical
-          Management</label
-        >
-        <label for="intensiveCare_0"
-          ><input type="text" name="intensiveCare_0" id="intensiveCare_0" />
-          Intensive Care</label
-        >
-        <label for="investigation_0"
-          ><input type="text" name="investigation_0" id="investigation_0" />
-          Investigation</label
-        >
-        <label for="nonAllopathicTreatment_0"
-          ><input
-            type="text"
-            name="nonAllopathicTreatment_0"
-            id="nonAllopathicTreatment_0"
-          />
-          Non-allopathic Treatment</label
-        >
+        <div>
+          <label for="medMgmt"
+            ><input type="checkbox" name="medMgmt" id="medMgmt" /> Mediacl
+            Management</label
+          >
+        </div>
+        <div>
+          <label for="surgicalMgmt"
+            ><input type="checkbox" name="surgicalMgmt" id="surgicalMgmt" />
+            Surgical Management</label
+          >
+        </div>
+        <div>
+          <label for="intensiveCare_0"
+            ><input
+              type="checkbox"
+              name="intensiveCare_0"
+              id="intensiveCare_0"
+            />
+            Intensive Care</label
+          >
+        </div>
+        <div>
+          <label for="investigation_0"
+            ><input
+              type="checkbox"
+              name="investigation_0"
+              id="investigation_0"
+            />
+            Investigation</label
+          >
+        </div>
+        <div>
+          <label for="nonAllopathicTreatment_0"
+            ><input
+              type="checkbox"
+              name="nonAllopathicTreatment_0"
+              id="nonAllopathicTreatment_0"
+            />
+            Non-allopathic Treatment</label
+          >
+        </div>
       </div>
       <div class="filled-by-insured-form-row">
         <div>
@@ -515,15 +532,22 @@
           <div class="data-container">
             <label>h.1) Route of drug administration:</label>
             <div class="routeofdrug">
-              <label for="IV"
-                ><input type="text" name="medMgmt" id="IV" /> IV</label
-              >
-              <label for="Oral"
-                ><input type="text" name="Oral" id="Oral" /> Oral</label
-              >
-              <label for="Other_0"
-                ><input type="text" name="Other_0" id="Other_0" /> Other</label
-              >
+              <div>
+                <label for="IV"
+                  ><input type="checkbox" name="medMgmt" id="IV" /> IV</label
+                >
+              </div>
+              <div>
+                <label for="Oral"
+                  ><input type="checkbox" name="Oral" id="Oral" /> Oral</label
+                >
+              </div>
+              <div>
+                <label for="Other_0"
+                  ><input type="checkbox" name="Other_0" id="Other_0" />
+                  Other</label
+                >
+              </div>
               <textarea name="details" id="drugAdminRoute_0"></textarea>
             </div>
           </div>
@@ -572,22 +596,24 @@
         <div>
           <label>l) In case of accident:</label>
           <label>i)Is it RTA: </label>
-          <label for="yes"><input type="text" id="rtaYes" /> Yes</label>
-          <label for="no"><input type="text" id="rtaNo" /> No</label>
+          <label for="yes"><input type="checkbox" id="rtaYes" /> Yes</label>
+          <label for="no"><input type="checkbox" id="rtaNo" /> No</label>
           <label>ii) Date of Injury: </label>
-          <input type="text" id="injuryDate_0" maxlength="1" value="D" />
-          <input type="text" id="injuryDate_1" maxlength="1" value="D" />
-          <input type="text" id="injuryDate_2" maxlength="1" value="M" />
-          <input type="text" id="injuryDate_3" maxlength="1" value="M" />
-          <input type="text" id="injuryDate_4" maxlength="1" value="Y" />
-          <input type="text" id="injuryDate_5" maxlength="1" value="Y" />
-          <input type="text" id="injuryDate_6" maxlength="1" value="Y" />
-          <input type="text" id="injuryDate_7" maxlength="1" value="Y" />
+          <input type="text" id="injuryDate_0" maxlength="1" placeholder="D" />
+          <input type="text" id="injuryDate_1" maxlength="1" placeholder="D" />
+          <input type="text" id="injuryDate_2" maxlength="1" placeholder="M" />
+          <input type="text" id="injuryDate_3" maxlength="1" placeholder="M" />
+          <input type="text" id="injuryDate_4" maxlength="1" placeholder="Y" />
+          <input type="text" id="injuryDate_5" maxlength="1" placeholder="Y" />
+          <input type="text" id="injuryDate_6" maxlength="1" placeholder="Y" />
+          <input type="text" id="injuryDate_7" maxlength="1" placeholder="Y" />
           <label>iii) Reported to policy:</label>
           <label for="yes"
-            ><input type="text" id="reportToPolicyYes" /> Yes</label
+            ><input type="checkbox" id="reportToPolicyYes" /> Yes</label
           >
-          <label for="no"><input type="text" id="reportToPolicyNo" /> No</label>
+          <label for="no"
+            ><input type="checkbox" id="reportToPolicyNo" /> No</label
+          >
           <label>iv) FIR No: </label>
           <input type="text" id="firno_0" maxlength="1" />
           <input type="text" id="firno_1" maxlength="1" />
@@ -603,18 +629,20 @@
             consumption:</label
           >
           <label for="yes"
-            ><input type="text" id="substanceAbuseCause_Yes" /> Yes</label
+            ><input type="checkbox" id="substanceAbuseCause_Yes" /> Yes</label
           >
           <label for="no"
-            ><input type="text" id="substanceAbuseCause_No" /> No</label
+            ><input type="checkbox" id="substanceAbuseCause_No" /> No</label
           >
           <label
             >vi) Test conducted to establish this, if yes attach report :
           </label>
           <label for="yes"
-            ><input type="text" id="testsConductedYes" /> Yes</label
+            ><input type="checkbox" id="testsConductedYes" /> Yes</label
           >
-          <label for="no"><input type="text" id="testsConductedNo" /> No</label>
+          <label for="no"
+            ><input type="checkbox" id="testsConductedNo" /> No</label
+          >
         </div>
       </div>
       <div class="filled-by-insured-form-row">
@@ -625,7 +653,7 @@
               type="text"
               id="maternityDetails_G"
               class="right-margine-gap"
-              maxlength="1"
+              maxlength="5"
             />
           </label>
           <label
@@ -633,7 +661,7 @@
               type="text"
               id="maternityDetails_P"
               class="right-margine-gap"
-              maxlength="1"
+              maxlength="5"
             />
           </label>
           <label
@@ -641,7 +669,7 @@
               type="text"
               id="maternityDetails_L"
               class="right-margine-gap"
-              maxlength="1"
+              maxlength="5"
             />
           </label>
           <label
@@ -649,7 +677,7 @@
               type="text"
               id="maternityDetails_A"
               class="right-margine-gap"
-              maxlength="1"
+              maxlength="5"
             />
           </label>
           <label class="left-margine-gap">n) Expected date of delivery: </label>
@@ -657,49 +685,49 @@
             type="text"
             id="expectedDeliveryDate_0"
             maxlength="1"
-            value="D"
+            placeholder="D"
           />
           <input
             type="text"
             id="expectedDeliveryDate_1"
             maxlength="1"
-            value="D"
+            placeholder="D"
           />
           <input
             type="text"
             id="expectedDeliveryDate_2"
             maxlength="1"
-            value="M"
+            placeholder="M"
           />
           <input
             type="text"
             id="expectedDeliveryDate_3"
             maxlength="1"
-            value="M"
+            placeholder="M"
           />
           <input
             type="text"
             id="expectedDeliveryDate_4"
             maxlength="1"
-            value="Y"
+            placeholder="Y"
           />
           <input
             type="text"
             id="expectedDeliveryDate_5"
             maxlength="1"
-            value="Y"
+            placeholder="Y"
           />
           <input
             type="text"
             id="expectedDeliveryDate_6"
             maxlength="1"
-            value="Y"
+            placeholder="Y"
           />
           <input
             type="text"
             id="expectedDeliveryDate_7"
             maxlength="1"
-            value="Y"
+            placeholder="Y"
           />
         </div>
       </div>
@@ -731,23 +759,25 @@
       <div class="filled-by-insured-form-row">
         <div>
           <label>A) Date of admission: </label>
-          <input type="text" id="admissionDate_0" maxlength="1" value="D" />
-          <input type="text" id="admissionDate_1" maxlength="1" value="D" />
-          <input type="text" id="admissionDate_2" maxlength="1" value="M" />
-          <input type="text" id="admissionDate_3" maxlength="1" value="M" />
-          <input type="text" id="admissionDate_4" maxlength="1" value="Y" />
-          <input type="text" id="admissionDate_5" maxlength="1" value="Y" />
-          <input type="text" id="admissionDate_6" maxlength="1" value="Y" />
-          <input type="text" id="admissionDate_7" maxlength="1" value="Y" />
+          <input type="text" id="admissionDate_0" maxlength="1" placeholder="D" />
+          <input type="text" id="admissionDate_1" maxlength="1" placeholder="D" />
+          <input type="text" id="admissionDate_2" maxlength="1" placeholder="M" />
+          <input type="text" id="admissionDate_3" maxlength="1" placeholder="M" />
+          <input type="text" id="admissionDate_4" maxlength="1" placeholder="Y" />
+          <input type="text" id="admissionDate_5" maxlength="1" placeholder="Y" />
+          <input type="text" id="admissionDate_6" maxlength="1" placeholder="Y" />
+          <input type="text" id="admissionDate_7" maxlength="1" placeholder="Y" />
           <label class="small-gap-between">b) Time of admission: </label>
-          <input type="text" id="admissionTime_0" maxlength="1" value="H" />
-          <input type="text" id="admissionTime_1" maxlength="1" value="H" />
-          <input type="text" id="admissionTime_2" maxlength="1" value="M" />
-          <input type="text" id="admissionTime_3" maxlength="1" value="M" />
+          <input type="text" id="admissionTime_0" maxlength="1" placeholder="H" />
+          <input type="text" id="admissionTime_1" maxlength="1" placeholder="H" />
+          <input type="text" id="admissionTime_2" maxlength="1" placeholder="M" />
+          <input type="text" id="admissionTime_3" maxlength="1" placeholder="M" />
           <label class="small-lag-between">c) This is an:</label>
-          <label><input type="text" id="emergency0" /> An emergency /</label>
           <label
-            ><input type="text" id="planned0" /> A planned hospitalization
+            ><input type="checkbox" id="emergency0" /> An emergency /</label
+          >
+          <label
+            ><input type="checkbox" id="planned0" /> A planned hospitalization
             event</label
           >
         </div>
@@ -755,7 +785,11 @@
       <div class="filled-by-insured-form-row">
         <div>
           <label
-            >d) Date of admission:<input type="text" id="daysInHospital_0" />
+            >d) Date of admission:<input
+              type="text"
+              id="daysInHospital_0"
+              maxlength="5"
+            />
             Days
           </label>
           <label class="left-margine-gap"
@@ -770,6 +804,7 @@
               type="text"
               id="roomTypeRs_0"
               class="right-margine-gap"
+              maxlength="35"
             />
           </label>
         </div>
@@ -780,7 +815,6 @@
           / year)
         </p>
       </div>
-      <!-- ...................................... -->
       <div class="details-of-patient-container">
         <div class="patient-form-first-section">
           <div>
@@ -803,20 +837,20 @@
         </div>
         <div class="patient-form-second-section">
           <div>
-            <input type="text" id="diabetes_0" maxlength="1" />
+            <input type="checkbox" id="diabetes_0" />
             <label class="right-padding-gap">1. Diabetes </label>
           </div>
           <div>
-            <input type="text" id="diabetes_mm/yy_0" maxlength="1" value="M" />
+            <input type="text" id="diabetes_mm/yy_0" maxlength="1" placeholder="M" />
             <input
               type="text"
               id="diabetes_mm/yy_1"
               class="small-margin-gap"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
-            <input type="text" id="diabetes_mm/yy_3" maxlength="1" value="Y" />
-            <input type="text" id="diabetes_mm/yy_4" maxlength="1" value="Y" />
+            <input type="text" id="diabetes_mm/yy_3" maxlength="1" placeholder="Y" />
+            <input type="text" id="diabetes_mm/yy_4" maxlength="1" placeholder="Y" />
           </div>
         </div>
       </div>
@@ -871,20 +905,20 @@
         </div>
         <div class="patient-form-second-section">
           <div>
-            <input type="text" id="heartDisease_0" maxlength="1" />
+            <input type="checkbox" id="heartDisease_0" />
             <label class="right-padding-gap">2. Heart Disease</label>
           </div>
           <div>
-            <input type="text" id="heart_mm/yy_0" maxlength="1" value="M" />
+            <input type="text" id="heart_mm/yy_0" maxlength="1" placeholder="M" />
             <input
               type="text"
               id="heart_mm/yy_1"
               class="small-margin-gap"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
-            <input type="text" id="heart_mm/yy_3" maxlength="1" value="Y" />
-            <input type="text" id="heart_mm/yy_4" maxlength="1" value="Y" />
+            <input type="text" id="heart_mm/yy_3" maxlength="1" placeholder="Y" />
+            <input type="text" id="heart_mm/yy_4" maxlength="1" placeholder="Y" />
           </div>
         </div>
       </div>
@@ -907,7 +941,7 @@
         </div>
         <div class="patient-form-second-section">
           <div>
-            <input type="text" id="hyperTension_0" maxlength="1" />
+            <input type="checkbox" id="hyperTension_0"  />
             <label>3. Hypertension </label>
           </div>
           <div>
@@ -915,26 +949,26 @@
               type="text"
               id="hyperTension_mm/yy_0"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
             <input
               type="text"
               id="hyperTension_mm/yy_1"
               class="small-margin-gap"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
             <input
               type="text"
               id="hyperTension_mm/yy_3"
               maxlength="1"
-              value="Y"
+              placeholder="Y"
             />
             <input
               type="text"
               id="hyperTension_mm/yy_4"
               maxlength="1"
-              value="Y"
+              placeholder="Y"
             />
           </div>
         </div>
@@ -958,7 +992,7 @@
         </div>
         <div class="patient-form-second-section">
           <div>
-            <input type="text" id="Hyperlipidemias_0" maxlength="1" />
+            <input type="checkbox" id="Hyperlipidemias_0"  />
             <label>4. Hyperlipidemias</label>
           </div>
           <div>
@@ -966,26 +1000,26 @@
               type="text"
               id="hyperlipidemias_mm/yy_0"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
             <input
               type="text"
               id="hyperlipidemias_mm/yy_1"
               class="small-margin-gap"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
             <input
               type="text"
               id="hyperlipidemias_mm/yy_3"
               maxlength="1"
-              value="Y"
+              placeholder="Y"
             />
             <input
               type="text"
               id="hyperlipidemias_mm/yy_4"
               maxlength="1"
-              value="Y"
+              placeholder="Y"
             />
           </div>
         </div>
@@ -1012,7 +1046,7 @@
         </div>
         <div class="patient-form-second-section">
           <div>
-            <input type="text" id="osteoarthritis_0" maxlength="1" />
+            <input type="checkbox" id="osteoarthritis_0" />
             <label>5. Osteoarthritis </label>
           </div>
           <div>
@@ -1020,26 +1054,26 @@
               type="text"
               id="osteoarthritis_mm/yy_0"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
             <input
               type="text"
               id="osteoarthritis_mm/yy_1"
               class="small-margin-gap"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
             <input
               type="text"
               id="osteoarthritis_mm/yy_3"
               maxlength="1"
-              value="Y"
+              placeholder="Y"
             />
             <input
               type="text"
               id="osteoarthritis_mm/yy_4"
               maxlength="1"
-              value="Y"
+              placeholder="Y"
             />
           </div>
         </div>
@@ -1067,9 +1101,8 @@
         <div class="patient-form-second-section">
           <div>
             <input
-              type="text"
+              type="checkbox"
               id="asthmaCopdBronchitisDetails_0"
-              maxlength="1"
             />
             <label>6. Asthma / COPD / Bronchitis </label>
           </div>
@@ -1078,26 +1111,26 @@
               type="text"
               id="asthmaCopdBronchitisDetails_mm/yy_0"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
             <input
               type="text"
               id="asthmaCopdBronchitisDetails_mm/yy_1"
               class="small-margin-gap"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
             <input
               type="text"
               id="asthmaCopdBronchitisDetails_mm/yy_3"
               maxlength="1"
-              value="Y"
+              placeholder="Y"
             />
             <input
               type="text"
               id="asthmaCopdBronchitisDetails_mm/yy_4"
               maxlength="1"
-              value="Y"
+              placeholder="Y"
             />
           </div>
         </div>
@@ -1121,20 +1154,20 @@
         </div>
         <div class="patient-form-second-section">
           <div>
-            <input type="text" id="cancer_0" maxlength="1" />
+            <input type="checkbox" id="cancer_0" />
             <label>7. Cancer </label>
           </div>
           <div>
-            <input type="text" id="cancer_mm/yy_0" maxlength="1" value="M" />
+            <input type="text" id="cancer_mm/yy_0" maxlength="1" placeholder="M" />
             <input
               type="text"
               id="cancer_mm/yy_1"
               class="small-margin-gap"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
-            <input type="text" id="cancer_mm/yy_3" maxlength="1" value="Y" />
-            <input type="text" id="cancer_mm/yy_4" maxlength="1" value="Y" />
+            <input type="text" id="cancer_mm/yy_3" maxlength="1" placeholder="Y" />
+            <input type="text" id="cancer_mm/yy_4" maxlength="1" placeholder="Y" />
           </div>
         </div>
       </div>
@@ -1157,20 +1190,20 @@
         </div>
         <div class="patient-form-second-section">
           <div>
-            <input type="text" id="drugAbuse_0" maxlength="1" />
+            <input type="checkbox" id="drugAbuse_0" />
             <label>8. Alcohol or drug abuse </label>
           </div>
           <div>
-            <input type="text" id="drugAbuse_mm/yy_0" maxlength="1" value="M" />
+            <input type="text" id="drugAbuse_mm/yy_0" maxlength="1" placeholder="M" />
             <input
               type="text"
               id="drugAbuse_mm/yy_1"
               class="small-margin-gap"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
-            <input type="text" id="drugAbuse_mm/yy_2" maxlength="1" value="Y" />
-            <input type="text" id="drugAbuse_mm/yy_3" maxlength="1" value="Y" />
+            <input type="text" id="drugAbuse_mm/yy_2" maxlength="1" placeholder="Y" />
+            <input type="text" id="drugAbuse_mm/yy_3" maxlength="1" placeholder="Y" />
           </div>
         </div>
       </div>
@@ -1225,7 +1258,7 @@
         </div>
         <div class="patient-form-second-section">
           <div>
-            <input type="text" id="hivOrStdAilment" maxlength="1" />
+            <input type="checkbox" id="hivOrStdAilment" />
             <label>9. Any HIV or STD / Related Ailments </label>
           </div>
           <div>
@@ -1233,36 +1266,35 @@
               type="text"
               id="hivOrStdAilment_mm/yy_0"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
             <input
               type="text"
               id="hivOrStdAilment_mm/yy_1"
               class="small-margin-gap"
               maxlength="1"
-              value="M"
+              placeholder="M"
             />
             <input
               type="text"
               id="hivOrStdAilment_mm/yy_2"
               maxlength="1"
-              value="Y"
+              placeholder="Y"
             />
             <input
               type="text"
               id="hivOrStdAilment_mm/yy_3"
               maxlength="1"
-              value="Y"
+              placeholder="Y"
             />
           </div>
         </div>
       </div>
       <div class="otherAilmentsDetails_box">
-        <textarea name="details" id="otherAilmentsDetails_0"></textarea>
+        <span name="details" id="otherAilmentsDetails_0"></span>
       </div>
-      <!-- .....................................................  -->
       <div class="filled-by-insured-title">
-        <p id="font-size-small">
+        <p class="font-size-small">
           <b>Declaration</b> (Please read very Carefully)
         </p>
       </div>
@@ -1312,7 +1344,6 @@
           <input type="text" id="drName_34" maxlength="1" />
           <input type="text" id="drName_35" maxlength="1" />
           <input type="text" id="drName_36" maxlength="1" />
-          <input type="text" id="drName_37" maxlength="1" />
         </div>
       </div>
       <div class="filled-by-insured-form-row">
@@ -1404,44 +1435,44 @@
       <div class="filled-by-insured-form-row">
         <div>
           <label>a) Patient's / Insured's Name:</label>
-          <input type="text" id="patientName_0" maxlength="1" />
-          <input type="text" id="patientName_1" maxlength="1" />
-          <input type="text" id="patientName_2" maxlength="1" />
-          <input type="text" id="patientName_3" maxlength="1" />
-          <input type="text" id="patientName_4" maxlength="1" />
-          <input type="text" id="patientName_5" maxlength="1" />
-          <input type="text" id="patientName_6" maxlength="1" />
-          <input type="text" id="patientName_7" maxlength="1" />
-          <input type="text" id="patientName_8" maxlength="1" />
-          <input type="text" id="patientName_9" maxlength="1" />
-          <input type="text" id="patientName_10" maxlength="1" />
-          <input type="text" id="patientName_11" maxlength="1" />
-          <input type="text" id="patientName_12" maxlength="1" />
-          <input type="text" id="patientName_13" maxlength="1" />
-          <input type="text" id="patientName_14" maxlength="1" />
-          <input type="text" id="patientName_15" maxlength="1" />
-          <input type="text" id="patientName_16" maxlength="1" />
-          <input type="text" id="patientName_17" maxlength="1" />
-          <input type="text" id="patientName_18" maxlength="1" />
-          <input type="text" id="patientName_19" maxlength="1" />
-          <input type="text" id="patientName_20" maxlength="1" />
-          <input type="text" id="patientName_21" maxlength="1" />
-          <input type="text" id="patientName_22" maxlength="1" />
-          <input type="text" id="patientName_23" maxlength="1" />
-          <input type="text" id="patientName_24" maxlength="1" />
-          <input type="text" id="patientName_25" maxlength="1" />
-          <input type="text" id="patientName_26" maxlength="1" />
-          <input type="text" id="patientName_27" maxlength="1" />
-          <input type="text" id="patientName_28" maxlength="1" />
-          <input type="text" id="patientName_29" maxlength="1" />
-          <input type="text" id="patientName_30" maxlength="1" />
-          <input type="text" id="patientName_31" maxlength="1" />
-          <input type="text" id="patientName_32" maxlength="1" />
-          <input type="text" id="patientName_33" maxlength="1" />
-          <input type="text" id="patientName_34" maxlength="1" />
-          <input type="text" id="patientName_35" maxlength="1" />
-          <input type="text" id="patientName_36" maxlength="1" />
-          <input type="text" id="patientName_37" maxlength="1" />
+          <input type="text" id="nameAndSignature_0" maxlength="1" />
+          <input type="text" id="nameAndSignature_1" maxlength="1" />
+          <input type="text" id="nameAndSignature_2" maxlength="1" />
+          <input type="text" id="nameAndSignature_3" maxlength="1" />
+          <input type="text" id="nameAndSignature_4" maxlength="1" />
+          <input type="text" id="nameAndSignature_5" maxlength="1" />
+          <input type="text" id="nameAndSignature_6" maxlength="1" />
+          <input type="text" id="nameAndSignature_7" maxlength="1" />
+          <input type="text" id="nameAndSignature_8" maxlength="1" />
+          <input type="text" id="nameAndSignature_9" maxlength="1" />
+          <input type="text" id="nameAndSignature_10" maxlength="1" />
+          <input type="text" id="nameAndSignature_11" maxlength="1" />
+          <input type="text" id="nameAndSignature_12" maxlength="1" />
+          <input type="text" id="nameAndSignature_13" maxlength="1" />
+          <input type="text" id="nameAndSignature_14" maxlength="1" />
+          <input type="text" id="nameAndSignature_15" maxlength="1" />
+          <input type="text" id="nameAndSignature_16" maxlength="1" />
+          <input type="text" id="nameAndSignature_17" maxlength="1" />
+          <input type="text" id="nameAndSignature_18" maxlength="1" />
+          <input type="text" id="nameAndSignature_19" maxlength="1" />
+          <input type="text" id="nameAndSignature_20" maxlength="1" />
+          <input type="text" id="nameAndSignature_21" maxlength="1" />
+          <input type="text" id="nameAndSignature_22" maxlength="1" />
+          <input type="text" id="nameAndSignature_23" maxlength="1" />
+          <input type="text" id="nameAndSignature_24" maxlength="1" />
+          <input type="text" id="nameAndSignature_25" maxlength="1" />
+          <input type="text" id="nameAndSignature_26" maxlength="1" />
+          <input type="text" id="nameAndSignature_27" maxlength="1" />
+          <input type="text" id="nameAndSignature_28" maxlength="1" />
+          <input type="text" id="nameAndSignature_29" maxlength="1" />
+          <input type="text" id="nameAndSignature_30" maxlength="1" />
+          <input type="text" id="nameAndSignature_31" maxlength="1" />
+          <input type="text" id="nameAndSignature_32" maxlength="1" />
+          <input type="text" id="nameAndSignature_33" maxlength="1" />
+          <input type="text" id="nameAndSignature_34" maxlength="1" />
+          <input type="text" id="nameAndSignature_35" maxlength="1" />
+          <input type="text" id="nameAndSignature_36" maxlength="1" />
+          <input type="text" id="nameAndSignature_37" maxlength="1" />
         </div>
       </div>
       <div class="filled-by-insured-form-row">
@@ -1485,25 +1516,25 @@
       <div class="filled-by-insured-form-row">
         <div class="patient-signature">
           <label>c) Patient's Insured's Signature:</label>
-          <textarea id="nameAndSignature_0"></textarea>
+          <span id="signaturePatient"></span>
         </div>
         <div>
           <label>Date:</label>
-          <input type="text" id="date_0" maxlength="1" />
-          <input type="text" id="date_1" maxlength="1" />
-          <input type="text" id="date_2" maxlength="1" />
-          <input type="text" id="date_3" maxlength="1" />
-          <input type="text" id="date_4" maxlength="1" />
-          <input type="text" id="date_5" maxlength="1" />
-          <input type="text" id="date_6" maxlength="1" />
-          <input type="text" id="date_7" maxlength="1" />
+          <input type="text" id="date_0" maxlength="1" placeholder="D"/>
+          <input type="text" id="date_1" maxlength="1" placeholder="D"/>
+          <input type="text" id="date_2" maxlength="1" placeholder="M"/>
+          <input type="text" id="date_3" maxlength="1" placeholder="M"/>
+          <input type="text" id="date_4" maxlength="1" placeholder="Y"/>
+          <input type="text" id="date_5" maxlength="1" placeholder="Y"/>
+          <input type="text" id="date_6" maxlength="1" placeholder="Y"/>
+          <input type="text" id="date_7" maxlength="1" placeholder="Y"/>
         </div>
         <div>
           <label>Time</label>
-          <input type="text" id="time_0" maxlength="1" />
-          <input type="text" id="time_1" maxlength="1" />
-          <input type="text" id="time_2" maxlength="1" />
-          <input type="text" id="time_3" maxlength="1" />
+          <input type="text" id="time_0" maxlength="1" placeholder="H"/>
+          <input type="text" id="time_1" maxlength="1" placeholder="H"/>
+          <input type="text" id="time_2" maxlength="1" placeholder="M"/>
+          <input type="text" id="time_3" maxlength="1" placeholder="M"/>
         </div>
       </div>
       <!-- second page form-container end -->
@@ -1605,32 +1636,32 @@
       <div class="filled-by-insured-form-row">
         <div class="dr-signature">
           <label> Hospital Seal:</label>
-          <textarea id="hospitalSeal_0"></textarea>
+          <span id="hospitalSeal_0"></span>
         </div>
         <div class="dr-signature">
           <label> Doctor's Signature:</label>
-          <textarea id="drSignature_0"></textarea>
+          <span id="drSignature_0"></span>
         </div>
       </div>
       <div class="filled-by-insured-form-row">
         <div class="dr-dateAndTime">
           <div>
             <label>Date:</label>
-            <input type="text" id="drDate_0" maxlength="1" value="D" />
-            <input type="text" id="drDate_1" maxlength="1" value="D" />
-            <input type="text" id="drDate_2" maxlength="1" value="M" />
-            <input type="text" id="drDate_3" maxlength="1" value="M" />
-            <input type="text" id="drDate_4" maxlength="1" value="Y" />
-            <input type="text" id="drDate_5" maxlength="1" value="Y" />
-            <input type="text" id="drDate_6" maxlength="1" value="Y" />
-            <input type="text" id="drDate_7" maxlength="1" value="Y" />
+            <input type="text" id="drDate_0" maxlength="1" placeholder="D" />
+            <input type="text" id="drDate_1" maxlength="1" placeholder="D" />
+            <input type="text" id="drDate_2" maxlength="1" placeholder="M" />
+            <input type="text" id="drDate_3" maxlength="1" placeholder="M" />
+            <input type="text" id="drDate_4" maxlength="1" placeholder="Y" />
+            <input type="text" id="drDate_5" maxlength="1" placeholder="Y" />
+            <input type="text" id="drDate_6" maxlength="1" placeholder="Y" />
+            <input type="text" id="drDate_7" maxlength="1" placeholder="Y" />
           </div>
           <div>
             <label>Time</label>
-            <input type="text" id="drTime_0" maxlength="1" value="H" />
-            <input type="text" id="drTime_1" maxlength="1" value="H" />
-            <input type="text" id="drTime_2" maxlength="1" value="M" />
-            <input type="text" id="drTime_3" maxlength="1" value="M" />
+            <input type="text" id="drTime_0" maxlength="1" placeholder="H" />
+            <input type="text" id="drTime_1" maxlength="1" placeholder="H" />
+            <input type="text" id="drTime_2" maxlength="1" placeholder="M" />
+            <input type="text" id="drTime_3" maxlength="1" placeholder="M" />
           </div>
         </div>
       </div>
